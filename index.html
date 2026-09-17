@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saigon Noodle Bar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8ed;
+            color: #222;
+        }
+
+        header {
+            background-color: #174d3b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: #ff3b2f;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            color: #174d3b;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contenido {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .especiales {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 280px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #ff3b2f;
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .contacto {
+            background-color: #174d3b;
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .contacto h2 {
+            color: white;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 25px;
+            background-color: #ff3b2f;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background-color: #d92d25;
+        }
+
+        footer {
+            background-color: #102f25;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h2 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Saigon Noodle Bar</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#carta">Carta</a>
+            <a href="#especiales">Especiales</a>
+            <a href="#entradas">Entradas</a>
+            <a href="#ubicacion">Ubicación</a>
+        </nav>
+    </header>
+
+
+    <div class="hero" id="inicio">
+        <h2>Saigon Noodle Bar</h2>
+        <p>
+            Descubrí los sabores de Saigón en Buenos Aires.
+            Una propuesta inspirada en la cocina vietnamita.
+        </p>
+    </div>
+
+
+    <section id="carta">
+        <h2>Carta</h2>
+
+        <div class="contenido">
+            <p>
+                Para conocer nuestra carta, buscala en:
+            </p>
+
+            <p>
+                <strong>Saigon Noodle Bar</strong><br>
+                Soler 4388, C1414<br>
+                Ciudad Autónoma de Buenos Aires
+            </p>
+
+            <a
+                class="boton"
+                href="https://www.google.com/search?q=Saigon+Noodle+Bar+Soler+4388"
+                target="_blank">
+                Buscar la carta
+            </a>
+        </div>
+    </section>
+
+
+    <section id="especiales">
+        <h2>Platos especiales</h2>
+
+        <div class="especiales">
+
+            <div class="card">
+                <h3>Bolulak</h3>
+                <p>
+                    Uno de los platos especiales de
+                    Saigon Noodle Bar.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Saigon Boul</h3>
+                <p>
+                    Otra de las propuestas especiales
+                    de la casa.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="entradas">
+        <h2>Entrada especial</h2>
+
+        <div class="contenido">
+            <div class="card" style="margin: 30px auto;">
+                <h3>Nems</h3>
+
+                <p>
+                    Nems de verdura / cerdo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="ubicacion">
+
+        <div class="contacto">
+
+            <h2>Ubicación y contacto</h2>
+
+            <p>
+                <strong>Saigon Noodle Bar</strong>
+            </p>
+
+            <p>
+                Soler 4388, C1414<br>
+                Ciudad Autónoma de Buenos Aires
+            </p>
+
+            <p style="margin-top: 15px;">
+                <strong>Teléfono:</strong><br>
+                11 4570-5249
+            </p>
+
+            <p style="margin-top: 15px;">
+                <strong>Instagram:</strong><br>
+                @saigonnoodlebar
+            </p>
+
+            <a
+                class="boton"
+                href="https://www.instagram.com/saigonnoodlebar/?hl=es"
+                target="_blank">
+                Ver Instagram
+            </a>
+
+            <br>
+
+            <a
+                class="boton"
+                href="https://www.google.com/maps/search/?api=1&query=Saigon+Noodle+Bar+Soler+4388+Buenos+Aires"
+                target="_blank">
+                Ver ubicación
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            Saigon Noodle Bar
+        </p>
+
+        <p>
+            Soler 4388 · CABA
+        </p>
+
+        <p>
+            Teléfono: 11 4570-5249
+        </p>
+
+        <p>
+            <a
+                href="https://www.instagram.com/saigonnoodlebar/?hl=es"
+                target="_blank">
+                Instagram @saigonnoodlebar
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+</html>
